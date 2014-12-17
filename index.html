@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<title >A Sombra Sobre Innsmouth</title>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/game.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" charset="utf-8">
+</head>
+<body>
+	<div id="gamecontainer">
+		<canvas id="gamecanvas" class="gamelayer" width="600px" height="500px" style="border-style:solid; border-color:black">
+		</canvas>
+		<div id="interfaceUsuario" class="gamelayer">
+			<ul>
+			  <li>Instruções:</li>
+			  <li>Barra verde no topo: vida do personagem principal.</li>
+			  <li>Número em vermelho: quantidade de munição do personagem principal.</li>
+              <li>Vermelho/Azul/Verde Claro: construções.</li>
+              <li>Verde Escuro: inimigos - possuem "raio de visão", quando conseguem enxergar o herói, ganham velocidade e vão em sua direção.</li>
+              <li>Cinza: personagens secundários (conversam) - para conversar aproxime e aperte "c".</li>
+              <li>Preto: peças arrastáveis.</li>
+              <li>Para atirar aperte "espaço".</li>
+  			</ul>
+		</div>
+		<div id="menuTela" class="gamelayer" style="width:600px; height:500px; border-style:solid; border-color:black">
+			<label onclick = "game.mostraEscolheUsuarioTela()">Iniciar jogo</label><br>
+			  <br>
+			  Créditos:
+			  <br>Henrique Galati
+			  <br>Igor Pauli
+			  <br>Raphael Andrade
+			  <br>Thatiane Pisco
+  			
+			<!--<label>Créditos</label>-->
+		</div>
+			<div id="escolheUsuarioTela" class="gamelayer"></div>
+		<div id="loadingscreen" class="gamelayer">
+			<div id="loadingmessage"></div>
+		</div>
+		<div id="endingscreen" class="gamelayer">
+		
+		</div>
+	</div>
+</body>
+</html>
